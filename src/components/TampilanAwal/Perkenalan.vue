@@ -4,7 +4,7 @@
             <img src="@/assets/gambarSaya.png" alt="Gambar Profile"
                 class=" rounded-circle img-fluid uabah-ukuran shadow-lg border-3">
             <h1 class="display-3 fw-bold">Fullstack Developer</h1>
-            <h3 class="fw-normal text-muted mb-3">Pembuatan Website dan Data Sains</h3>
+            <h3 class="fw-normal text-muted mb-3">Website Creation and Science Data</h3>
         </div>
     </div>
 </template>

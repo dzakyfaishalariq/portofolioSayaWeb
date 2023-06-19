@@ -8,7 +8,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import jQuery from "jquery";
 window.$ = jQuery;
 // fontawesome
-import "@fortawesome/fontawesome-free/css/all.css";
-import "@fortawesome/fontawesome-free/js/all.js";
+/* import the fontawesome core */
+import { library } from "@fortawesome/fontawesome-svg-core";
 
-createApp(App).use(router).mount("#app");
+/* import font awesome icon component */
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+/* import specific icons */
+import { faFlorinSign } from "@fortawesome/free-solid-svg-icons";
+import { faServer } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+
+/* add icons to the library */
+library.add(faCode, faFlorinSign, faServer, faDatabase, faPeopleGroup);
+
+createApp(App)
+  .use(router)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .mount("#app");
